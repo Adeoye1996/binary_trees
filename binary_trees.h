@@ -32,11 +32,11 @@ typedef struct binary_tree_s heap_t;
  * @node: A node of a binary tree.
  * @next: The next node to traverse to in the binary tree.
  */
-typedef struct levelorder_queue_s
+typedef struct queue_node_s
 {
 	binary_tree_t *node;
-	struct levelorder_queue_s *next;
-} levelorder_queue_t;
+	struct queue_node_s *next;
+} queue_node_t;
 
 /* Printing helper function */
 void binary_tree_print(const binary_tree_t *);

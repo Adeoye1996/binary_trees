@@ -2,26 +2,8 @@
 #include "binary_trees.h"
 
 /**
- * struct queue_node_s - Structure for a queue node
- * @node: Pointer to the binary tree node
- * @next: Pointer to the next node in the queue
- */
-typedef struct queue_node_s
-{
-	binary_tree_t *node;
-
-	struct queue_node_s *next;
-} queue_node_t;
-
-queue_node_t *create_new_node(binary_tree_t *node);
-void release_queue(queue_node_t *head);
-void enqueue(binary_tree_t *node, queue_node_t *head,
-		queue_node_t **tail);
-void dequeue(queue_node_t **head);
-
-/**
- * create_new_node - Creates a new node for a queue.
- * @node: The binary tree node for the new node.
+ * create_new_node - Creates a new queue node.
+ * @node: The binary tree node for the new node contain.
  *
  * Return: If an error occurs, NULL.
  *         Otherwise, a pointer to the new node.
